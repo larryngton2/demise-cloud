@@ -1,2 +1,2 @@
 # demise cloud
-Repository with currently only online configs for the demise client, currently here for testing.
+Repository with only online configs for the demise client for now, currently here for testing.
