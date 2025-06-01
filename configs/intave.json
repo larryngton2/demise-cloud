@@ -44,7 +44,7 @@
     "Key": 0,
     "Hidden": false,
     "Values": {
-      "Options": "",
+      "Options": "Miniblox",
       "GetName Mode": "Bw4v4"
     }
   },
@@ -100,36 +100,6 @@
       "CPS (right max)": 20.0
     }
   },
-  "AutoClutch": {
-    "State": false,
-    "Key": 0,
-    "Hidden": false,
-    "Values": {
-      "Sneak": false,
-      "Clutch rotation mode": "Center",
-      "Min C search": 0.1,
-      "Max C search": 0.9,
-      "Smooth mode": "Linear",
-      "Accelerate": false,
-      "Imperfect correlation": false,
-      "Yaw rotation speed (min)": 180.0,
-      "Yaw rotation speed (max)": 180.0,
-      "Pitch rotation speed (min)": 180.0,
-      "Pitch rotation speed (max)": 180.0,
-      "Midpoint": 0.8,
-      "Distance based rotation speed": false,
-      "Min range": 0.0,
-      "Max range": 8.0,
-      "Decrement per cycle": 0.5,
-      "Movement fix": "None",
-      "Short stop": false,
-      "Duration": 50.0,
-      "Rotation diff buildup to stop": 180.0,
-      "Max threshold attempts to stop": 1.0,
-      "Ray Trace": true,
-      "Swing": true
-    }
-  },
   "AutoHeal": {
     "State": false,
     "Key": 0,
@@ -152,7 +122,7 @@
     "Key": 0,
     "Hidden": true,
     "Values": {
-      "Mode": "Mineblaze duels"
+      "Mode": "Mineberry duels"
     }
   },
   "AutoRegister": {
@@ -302,6 +272,12 @@
       "Interpolate": true,
       "Interpolation Amount": 0.2
     }
+  },
+  "BloxdPhysics": {
+    "State": false,
+    "Key": 0,
+    "Hidden": false,
+    "Values": {}
   },
   "Breadcrumbs": {
     "State": false,
@@ -510,7 +486,7 @@
       "Delay (min ms)": 100.0,
       "Delay (max ms)": 101.0,
       "Delay on opponent attack": 300.0,
-      "Keep range mode": "None",
+      "Keep range mode": "WTap",
       "Timer": 0.5,
       "Timer ticks": 2.0,
       "Experimental dynamic hurt time": false,
@@ -639,7 +615,6 @@
     "Values": {
       "Elements": "Watermark, Module List, Armor, Target HUD, Notification, Keystrokes, Info",
       "Text Height": 0.0,
-      "Suffix": "Simple",
       "Hide render": true,
       "Background": true,
       "Advanced BPS": false,
@@ -753,7 +728,7 @@
       "Reblock ticks": 0.0,
       "Always render blocking": false,
       "Unblock on rayCast fail": false,
-      "Smooth mode": "Relative",
+      "Smooth mode": "Bezier",
       "Accelerate": true,
       "Imperfect correlation": true,
       "Yaw rotation speed (min)": 41.14,
@@ -793,8 +768,8 @@
       "Max Yaw Factor": 0.99,
       "Min Pitch Factor": 0.5,
       "Max Pitch Factor": 0.5,
-      "Interpolate vec": true,
-      "Amount": 0.1,
+      "Interpolate vec": false,
+      "Amount": 0.15,
       "Static X offset": 0.0,
       "Static Y offset": 0.0,
       "Only update on miss": false,
@@ -822,12 +797,7 @@
     "Hidden": false,
     "Values": {
       "Mode": "Vanilla",
-      "JumpOff amount": 0.2,
-      "Ground Speed": 0.4,
-      "Jump Speed": 1.4,
-      "Glide": 0.0,
-      "Timer": 1.0,
-      "Auto disable": true
+      "JumpOff amount": 0.2
     }
   },
   "MainMenuOptions": {
@@ -1080,20 +1050,20 @@
       "Max Telly Ticks": 3.0,
       "Rotations": "GodBridge",
       "Static-ify": true,
-      "Min search": 0.1,
-      "Max search": 0.9,
+      "Min search": 0.01,
+      "Max search": 0.99,
       "Clutch": true,
-      "Sneak": false,
-      "Clutch rotation mode": "Center",
-      "Min C search": 0.01,
-      "Max C search": 0.99,
-      "Smooth mode": "Bezier",
+      "Clutch rotation mode": "Normal",
+      "Min C search": 0.1,
+      "Max C search": 0.9,
+      "Instant clutch rots": true,
+      "Smooth mode": "None",
       "Accelerate": false,
       "Imperfect correlation": false,
-      "Yaw rotation speed (min)": 130.28,
-      "Yaw rotation speed (max)": 130.28,
-      "Pitch rotation speed (min)": 130.28,
-      "Pitch rotation speed (max)": 130.28,
+      "Yaw rotation speed (min)": 80.57,
+      "Yaw rotation speed (max)": 80.57,
+      "Pitch rotation speed (min)": 80.57,
+      "Pitch rotation speed (max)": 80.57,
       "Midpoint": 0.8,
       "Distance based rotation speed": false,
       "Min range": 0.0,
@@ -1104,7 +1074,7 @@
       "Duration": 50.0,
       "Rotation diff buildup to stop": 180.0,
       "Max threshold attempts to stop": 1.0,
-      "Addons": "Sprint, Swing, Ignore tick cycle, Ray Trace",
+      "Addons": "Sprint, Ray Trace",
       "Blocks To Sneak": 7.0,
       "Sneak Distance": 0.0,
       "Only sneak on ground": true,
@@ -1147,6 +1117,7 @@
       "Timer": true,
       "Boost multiplier": 1.0,
       "BMC mode": "Low",
+      "Hop ticks": 5.0,
       "Yaw offset": "None",
       "Min speed limiter": false,
       "Min speed": 0.25,
