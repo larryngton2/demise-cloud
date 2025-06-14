@@ -16,7 +16,6 @@
       "Yaw rotation speed (max)": 180.0,
       "Pitch rotation speed (min)": 180.0,
       "Pitch rotation speed (max)": 180.0,
-      "Midpoint": 0.8,
       "Distance based rotation speed": false,
       "Min range": 0.0,
       "Max range": 8.0,
@@ -90,8 +89,8 @@
     "Hidden": false,
     "Values": {
       "Left click": true,
-      "CPS (left min)": 9.0,
-      "CPS (left max)": 13.0,
+      "CPS (left min)": 12.0,
+      "CPS (left max)": 16.0,
       "Break blocks (left)": true,
       "Right click": false,
       "CPS (right min)": 20.0,
@@ -99,7 +98,7 @@
     }
   },
   "AutoHeal": {
-    "State": false,
+    "State": true,
     "Key": 0,
     "Hidden": false,
     "Values": {
@@ -156,7 +155,7 @@
       "Predict Size": 5.0,
       "Silent": true,
       "Rotate legit": false,
-      "Smooth mode": "Bezier",
+      "Smooth mode": "Linear",
       "Accelerate": false,
       "Yaw accel factor": 0.25,
       "Pitch accel factor": 0.25,
@@ -165,7 +164,6 @@
       "Yaw rotation speed (max)": 75.42,
       "Pitch rotation speed (min)": 53.14,
       "Pitch rotation speed (max)": 68.57,
-      "Midpoint": 0.8,
       "Distance based rotation speed": false,
       "Decrement per cycle": 0.5,
       "Movement fix": false,
@@ -204,7 +202,6 @@
       "Yaw rotation speed (max)": 180.0,
       "Pitch rotation speed (min)": 180.0,
       "Pitch rotation speed (max)": 180.0,
-      "Midpoint": 0.8,
       "Distance based rotation speed": false,
       "Min range": 1.0,
       "Max range": 8.0,
@@ -226,19 +223,19 @@
     }
   },
   "BackTrack": {
-    "State": true,
+    "State": false,
     "Key": 0,
     "Hidden": false,
     "Values": {
       "Only when needed": true,
-      "Attack range": 2.9,
+      "Attack range": 3.0,
       "Min range": 1.0,
       "Max range": 8.0,
       "Only double": false,
       "Extra check": true,
-      "Delay ms": 45.0,
+      "Delay ms": 40.0,
       "Team check": true,
-      "Mode": "FakePlayer",
+      "Mode": "Box",
       "Color": {
         "RGB": -16777216,
         "Alpha": 0.29803923
@@ -262,7 +259,6 @@
       "Yaw rotation speed (max)": 180.0,
       "Pitch rotation speed (min)": 180.0,
       "Pitch rotation speed (max)": 180.0,
-      "Midpoint": 0.8,
       "Distance based rotation speed": false,
       "Min range": 0.0,
       "Max range": 8.0,
@@ -374,9 +370,7 @@
     "State": false,
     "Key": 54,
     "Hidden": false,
-    "Values": {
-      "Mode": "Panel"
-    }
+    "Values": {}
   },
   "ClientSpoofer": {
     "State": false,
@@ -513,7 +507,7 @@
       "Search range": 8.1,
       "Recoil time (ms)": 45.0,
       "Delay (min ms)": 100.0,
-      "Delay (max ms)": 101.0,
+      "Delay (max ms)": 100.0,
       "Delay on opponent attack": 100.0,
       "Keep range mode": "None",
       "Timer": 0.5,
@@ -590,7 +584,7 @@
   },
   "FreeCam": {
     "State": false,
-    "Key": 0,
+    "Key": 22,
     "Hidden": false,
     "Values": {
       "Fly": true,
@@ -638,24 +632,14 @@
       "Team check": true
     }
   },
-  "ImageESP": {
-    "State": false,
-    "Key": 0,
-    "Hidden": false,
-    "Values": {
-      "Image": "1"
-    }
-  },
   "Interface": {
     "State": true,
     "Key": 0,
     "Hidden": false,
     "Values": {
-      "Elements": "Watermark, Module List, Armor, Target HUD, Notification, Keystrokes, Info",
-      "Text Height": 0.0,
+      "Elements": "Watermark, Module List, Armor, Notification, Keystrokes, Info",
       "Hide render": true,
       "Advanced BPS": false,
-      "TargetHUD tracking": false,
       "Color Setting": "Custom",
       "Main Color": {
         "RGB": -1,
@@ -749,14 +733,14 @@
     }
   },
   "KillAura": {
-    "State": true,
+    "State": false,
     "Key": 19,
     "Hidden": false,
     "Values": {
       "Attack range": 3.0,
       "Search range": 8.0,
       "Click mode": "Legit",
-      "Smart clicking": true,
+      "Smart clicking": false,
       "Force attack on BackTrack": true,
       "Ignore blocking": false,
       "CPS (min)": 12.0,
@@ -766,7 +750,7 @@
       "Swing range": 4.5,
       "AutoBlock": false,
       "AutoBlock range": 1.5,
-      "AutoBlock mode": "Vanilla",
+      "AutoBlock mode": "Fake",
       "Reblock ticks": 0.0,
       "Always render blocking": false,
       "Unblock on rayCast fail": false,
@@ -774,14 +758,13 @@
       "Rotate legit": true,
       "Smooth mode": "Linear",
       "Accelerate": true,
-      "Yaw accel factor": 0.6,
+      "Yaw accel factor": 0.65,
       "Pitch accel factor": 0.4,
       "Imperfect correlation": false,
       "Yaw rotation speed (min)": 53.14,
       "Yaw rotation speed (max)": 75.42,
       "Pitch rotation speed (min)": 53.14,
       "Pitch rotation speed (max)": 75.42,
-      "Midpoint": 0.8,
       "Distance based rotation speed": true,
       "Min range": 0.0,
       "Max range": 0.5,
@@ -812,8 +795,8 @@
       "Offset chance": 25.0,
       "Min Yaw Factor": 0.99,
       "Max Yaw Factor": 0.99,
-      "Min Pitch Factor": 0.25,
-      "Max Pitch Factor": 0.25,
+      "Min Pitch Factor": 0.5,
+      "Max Pitch Factor": 0.5,
       "Interpolate vec": true,
       "Amount": 0.1,
       "Static X offset": 0.0,
@@ -877,11 +860,10 @@
     }
   },
   "Manager": {
-    "State": true,
+    "State": false,
     "Key": 49,
     "Hidden": false,
     "Values": {
-      "Mode": "Open Inventory",
       "Start delay": 5.0,
       "Auto armor": true,
       "Min armor delay": 1.0,
@@ -1119,6 +1101,7 @@
       "Min search": 0.1,
       "Max search": 0.9,
       "Clutch": true,
+      "Clutch criteria": "MouseOver",
       "Clutch rotation mode": "Normal",
       "Min C search": 0.1,
       "Max C search": 0.9,
@@ -1134,7 +1117,6 @@
       "Yaw rotation speed (max)": 80.57,
       "Pitch rotation speed (min)": 80.57,
       "Pitch rotation speed (max)": 80.57,
-      "Midpoint": 0.8,
       "Distance based rotation speed": false,
       "Min range": 0.0,
       "Max range": 8.0,
@@ -1145,8 +1127,7 @@
       "Rotation diff buildup to stop": 180.0,
       "Max threshold attempts to stop": 1.0,
       "Addons": "Sprint, Ray Trace, Target Block ESP",
-      "Blocks To Sneak": 7.0,
-      "Sneak Distance": 0.0,
+      "Blocks To Sneak": 6.0,
       "Only sneak on ground": true,
       "Tower": "Jump",
       "Tower Move": "Jump",
@@ -1218,14 +1199,14 @@
     }
   },
   "Stealer": {
-    "State": true,
+    "State": false,
     "Key": 49,
     "Hidden": false,
     "Values": {
-      "Start Delay": 5.0,
+      "Start Delay": 10.0,
       "Close Delay": 5.0,
-      "Min Delay": 1.0,
-      "Max Delay": 2.0,
+      "Min Delay": 0.0,
+      "Max Delay": 0.0,
       "Menu Check": true
     }
   },
@@ -1251,6 +1232,19 @@
       "Air speed": 1.0
     }
   },
+  "TargetHud": {
+    "State": true,
+    "Key": 0,
+    "Hidden": false,
+    "Values": {
+      "TargetHUD tracking": true,
+      "ESP": false,
+      "Interpolation": 0.1,
+      "Center X": true,
+      "Offset X": 0.0,
+      "Offset Y": 70.0
+    }
+  },
   "TargetStrafe": {
     "State": false,
     "Key": 0,
@@ -1266,10 +1260,7 @@
     "State": false,
     "Key": 0,
     "Hidden": false,
-    "Values": {
-      "Hitboxes": false,
-      "Scale": 1.0
-    }
+    "Values": {}
   },
   "ThirdPersonDistance": {
     "State": false,
@@ -1280,12 +1271,11 @@
     }
   },
   "TickBase": {
-    "State": true,
+    "State": false,
     "Key": 0,
     "Hidden": false,
     "Values": {
       "Mode": "Past",
-      "Pass through clicking": true,
       "Delay": 250.0,
       "Tick range": 3.0,
       "Min range": 2.0,
@@ -1295,7 +1285,7 @@
       "Allow early break": true,
       "Prioritise crits": true,
       "HurtTime to stop (\u003e)": 10.0,
-      "Target prediction ticks": 2.0,
+      "Target prediction ticks": 1.0,
       "Render predicted target pos": false,
       "Render predicted self pos": false,
       "Use backtrack pos": false,
@@ -1315,23 +1305,19 @@
     "Key": 0,
     "Hidden": false,
     "Values": {
-      "Static range": true,
-      "Min range": 2.7,
-      "Max range": 3.5,
-      "Smart range": true,
-      "Attack range": 2.7,
-      "Always gain balance": true,
-      "Search range": 500.0,
-      "Attack timer": 9.99,
-      "Balance gain timer": 0.98,
-      "Max balance": 6.0,
-      "Balance limit timer": 1.0,
-      "Pause on flag": true,
-      "Team check": true,
-      "Render balance": true,
-      "Debug": false,
-      "Curr balance": true,
-      "Less than 0": false
+      "Balance range": 15.0,
+      "Min balance range": 3.0,
+      "Delay": 250.0,
+      "Tick range": 3.0,
+      "Min range": 2.5,
+      "Stop range": 3.0,
+      "Search range": 15.0,
+      "Max ticks": 2.0,
+      "Allow early break": true,
+      "Prioritise crits": true,
+      "HurtTime to stop (\u003e)": 0.0,
+      "Render predicted self pos": false,
+      "Team Check": true
     }
   },
   "Trajectories": {
@@ -1349,7 +1335,7 @@
     }
   },
   "Velocity": {
-    "State": true,
+    "State": false,
     "Key": 0,
     "Hidden": false,
     "Values": {
@@ -1362,7 +1348,7 @@
       "Max hurtTime": 7.0,
       "Factor (min)": 0.6,
       "Factor (max)": 0.6,
-      "Max attacks": 10.0,
+      "Max attacks": 3.0,
       "Ticks": 0.0,
       "On swing": false
     }
@@ -1382,7 +1368,7 @@
     "Values": {
       "Mode": "Box",
       "Only silent": false,
-      "Not on miss": false,
+      "Not on miss": true,
       "Size": 0.08,
       "Custom Color": true,
       "Color": {
