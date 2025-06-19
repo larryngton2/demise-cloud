@@ -89,8 +89,8 @@
     "Hidden": false,
     "Values": {
       "Left click": true,
-      "CPS (left min)": 12.0,
-      "CPS (left max)": 16.0,
+      "CPS (left min)": 9.0,
+      "CPS (left max)": 13.0,
       "Break blocks (left)": true,
       "Right click": false,
       "CPS (right min)": 20.0,
@@ -103,15 +103,16 @@
     "Hidden": false,
     "Values": {
       "Head": false,
-      "HeadHealth": 15.0,
-      "MinHeadDelay": 300.0,
-      "MaxHeadDelay": 500.0,
+      "Head health": 15.0,
+      "Min head delay": 1.0,
+      "Max head delay": 1.0,
       "Soup": true,
-      "SoupHealth": 10.0,
-      "MinSoupDelay": 50.0,
-      "MaxSoupDelay": 100.0,
+      "Soup health": 15.0,
+      "Min soup delay": 3.0,
+      "Max soup delay": 3.0,
       "Refill": true,
-      "RefillDelay": 300.0
+      "Open delay": 5.0,
+      "Refill delay": 0.0
     }
   },
   "AutoMeow": {
@@ -129,7 +130,7 @@
     "Key": 0,
     "Hidden": true,
     "Values": {
-      "Mode": "Mineberry duels"
+      "Mode": "Mineblaze duels"
     }
   },
   "AutoRegister": {
@@ -223,7 +224,7 @@
     }
   },
   "BackTrack": {
-    "State": false,
+    "State": true,
     "Key": 0,
     "Hidden": false,
     "Values": {
@@ -341,6 +342,16 @@
       }
     }
   },
+  "CheatDetector": {
+    "State": true,
+    "Key": 0,
+    "Hidden": false,
+    "Values": {
+      "Checks": "Invalid interact, No fall, Omni sprint, Scaffold",
+      "Check self": true,
+      "Alert Cooldown": 0.0
+    }
+  },
   "ChestESP": {
     "State": true,
     "Key": 0,
@@ -440,44 +451,9 @@
     "Key": 0,
     "Hidden": false,
     "Values": {
-      "Disablers": "Intave",
+      "Options": "Balance, Saved balance",
       "Sprint": false,
       "Sneak": false
-    }
-  },
-  "ESP": {
-    "State": true,
-    "Key": 0,
-    "Hidden": false,
-    "Values": {
-      "Tags": true,
-      "Tags Size": 1.0,
-      "Tags Health": true,
-      "Tags Background": false,
-      "Tags Health Bar": false,
-      "Item": false,
-      "2D ESP": false,
-      "Box": true,
-      "Box Color": {
-        "RGB": -1,
-        "Alpha": 1.0
-      },
-      "Health Bar": true,
-      "Absorption Color": {
-        "RGB": -206,
-        "Alpha": 1.0
-      },
-      "Armor Bar": true,
-      "Armor Bar Color": {
-        "RGB": -13434881,
-        "Alpha": 1.0
-      },
-      "Skeletons": false,
-      "Skeletons Width": 0.5,
-      "Skeletons Color": {
-        "RGB": -1,
-        "Alpha": 1.0
-      }
     }
   },
   "ExplosionBlock": {
@@ -502,15 +478,16 @@
       "Mode": "Spoof",
       "Smart": true,
       "Modify movement yaw": false,
+      "Target range": 2.7,
       "Attack range": 2.7,
-      "Always spoof": false,
+      "Always spoof": true,
       "Search range": 8.1,
-      "Recoil time (ms)": 45.0,
-      "Delay (min ms)": 100.0,
-      "Delay (max ms)": 100.0,
+      "Recoil time (ms)": 152.0,
+      "Delay (min ms)": 101.0,
+      "Delay (max ms)": 102.0,
       "Delay on opponent attack": 100.0,
       "Keep range mode": "None",
-      "Timer": 0.5,
+      "Timer": 0.25,
       "Timer ticks": 2.0,
       "Experimental dynamic hurt time": false,
       "Pause on backtrack": true,
@@ -740,7 +717,7 @@
       "Attack range": 3.0,
       "Search range": 8.0,
       "Click mode": "Legit",
-      "Smart clicking": false,
+      "Smart clicking": true,
       "Force attack on BackTrack": true,
       "Ignore blocking": false,
       "CPS (min)": 12.0,
@@ -768,7 +745,7 @@
       "Distance based rotation speed": true,
       "Min range": 0.0,
       "Max range": 0.5,
-      "Decrement per cycle": 0.7,
+      "Decrement per cycle": 0.6,
       "Movement fix": true,
       "Short stop": false,
       "Duration": 50.0,
@@ -787,10 +764,10 @@
       "max miss offset": 0.99,
       "Miss offset lerp": 0.1,
       "Delayed target pos": true,
-      "Delay ticks": 10.0,
+      "Delay updates": 7.0,
       "Delay on hurtTime": true,
-      "Delay hurtTime": 5.0,
-      "Offset mode": "Gaussian",
+      "Delay hurtTime": 7.0,
+      "Offset mode": "Noise",
       "Not on first hit": false,
       "Offset chance": 25.0,
       "Min Yaw Factor": 0.99,
@@ -807,7 +784,7 @@
       "Target Priority": "Distance",
       "Target Switch Delay (ms)": 500.0,
       "Target ESP": true,
-      "Allowed targets": "Players, Invisibles, Dead"
+      "Allowed targets": "Players, Teams, Invisibles, Dead"
     }
   },
   "LagRange": {
@@ -815,12 +792,12 @@
     "Key": 0,
     "Hidden": false,
     "Values": {
-      "Delay": 0.0,
+      "Delay": 250.0,
       "Attack range": 3.0,
       "Stop range": 2.5,
-      "Search range": 7.0,
-      "Lag ticks": 5.0,
-      "Max ms": 501.0,
+      "Search range": 15.0,
+      "Lag ticks": 7.0,
+      "Max ms": 299.0,
       "HurtTime to stop (\u003e)": 10.0,
       "Pause on backtrack": true,
       "Force first hit": true,
@@ -941,12 +918,6 @@
       "Timer": 1.0
     }
   },
-  "MoveHelper": {
-    "State": false,
-    "Key": 0,
-    "Hidden": false,
-    "Values": {}
-  },
   "MoveStatus": {
     "State": false,
     "Key": 0,
@@ -968,6 +939,18 @@
       "Render dropped bow": true,
       "HUD X": 78.0,
       "HUD Y": 98.0
+    }
+  },
+  "NameTags": {
+    "State": true,
+    "Key": 0,
+    "Hidden": false,
+    "Values": {
+      "Mode": "Modern",
+      "Offset Y": 3.0,
+      "Tags size": 1.0,
+      "Tags health": true,
+      "Tags background": true
     }
   },
   "NoFall": {
@@ -1039,6 +1022,14 @@
       "Intave mode": "Manual"
     }
   },
+  "PingSpoof": {
+    "State": false,
+    "Key": 0,
+    "Hidden": false,
+    "Values": {
+      "Ms": 300.0
+    }
+  },
   "Reach": {
     "State": false,
     "Key": 0,
@@ -1094,6 +1085,7 @@
     "Hidden": false,
     "Values": {
       "Mode": "Normal",
+      "Reset mode": "Jump",
       "Min Telly Ticks": 3.0,
       "Max Telly Ticks": 3.0,
       "Rotations": "GodBridge",
@@ -1113,10 +1105,10 @@
       "Yaw accel factor": 0.25,
       "Pitch accel factor": 0.25,
       "Imperfect correlation": false,
-      "Yaw rotation speed (min)": 80.57,
-      "Yaw rotation speed (max)": 80.57,
-      "Pitch rotation speed (min)": 80.57,
-      "Pitch rotation speed (max)": 80.57,
+      "Yaw rotation speed (min)": 45.24,
+      "Yaw rotation speed (max)": 45.24,
+      "Pitch rotation speed (min)": 45.24,
+      "Pitch rotation speed (max)": 45.24,
       "Distance based rotation speed": false,
       "Min range": 0.0,
       "Max range": 8.0,
@@ -1271,21 +1263,22 @@
     }
   },
   "TickBase": {
-    "State": false,
+    "State": true,
     "Key": 0,
     "Hidden": false,
     "Values": {
       "Mode": "Past",
+      "Pause renderer": true,
       "Delay": 250.0,
       "Tick range": 3.0,
       "Min range": 2.0,
-      "Stop range": 0.1,
+      "Stop range": 3.0,
       "Search range": 15.0,
-      "Max ticks": 3.0,
+      "Max ticks": 2.0,
       "Allow early break": true,
       "Prioritise crits": true,
       "HurtTime to stop (\u003e)": 10.0,
-      "Target prediction ticks": 1.0,
+      "Target prediction ticks": 0.0,
       "Render predicted target pos": false,
       "Render predicted self pos": false,
       "Use backtrack pos": false,
@@ -1305,19 +1298,21 @@
     "Key": 0,
     "Hidden": false,
     "Values": {
+      "Preload": true,
       "Balance range": 15.0,
-      "Min balance range": 3.0,
+      "Min balance range": 4.5,
       "Delay": 250.0,
       "Tick range": 3.0,
-      "Min range": 2.5,
+      "Min range": 2.0,
       "Stop range": 3.0,
       "Search range": 15.0,
-      "Max ticks": 2.0,
+      "Max ticks": 1.0,
       "Allow early break": true,
       "Prioritise crits": true,
-      "HurtTime to stop (\u003e)": 0.0,
+      "HurtTime to stop (\u003e)": 10.0,
       "Render predicted self pos": false,
-      "Team Check": true
+      "Team Check": true,
+      "Render balance": true
     }
   },
   "Trajectories": {
@@ -1368,7 +1363,7 @@
     "Values": {
       "Mode": "Box",
       "Only silent": false,
-      "Not on miss": true,
+      "Not on miss": false,
       "Size": 0.08,
       "Custom Color": true,
       "Color": {
