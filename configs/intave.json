@@ -870,14 +870,14 @@
     "Values": {
       "Start delay": 5.0,
       "Auto armor": true,
-      "Min armor delay": 1.0,
-      "Max armor delay": 2.0,
+      "Min armor delay": 2.0,
+      "Max armor delay": 3.0,
       "Sort items": true,
-      "Min sort delay": 1.0,
-      "Max sort delay": 2.0,
+      "Min sort delay": 2.0,
+      "Max sort delay": 3.0,
       "Drop items": true,
       "Min drop delay": 1.0,
-      "Max drop delay": 2.0
+      "Max drop delay": 1.0
     }
   },
   "MotionBlur": {
@@ -1238,10 +1238,10 @@
     "Key": 49,
     "Hidden": false,
     "Values": {
-      "Start Delay": 10.0,
+      "Start Delay": 5.0,
       "Close Delay": 5.0,
-      "Min Delay": 0.0,
-      "Max Delay": 0.0,
+      "Min Delay": 2.0,
+      "Max Delay": 3.0,
       "Menu Check": true
     }
   },
