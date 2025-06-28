@@ -31,6 +31,18 @@
       "Target ESP": false
     }
   },
+  "Animations": {
+    "State": true,
+    "Key": 0,
+    "Hidden": false,
+    "Values": {
+      "Block on swing": true,
+      "Block animation": "Exhibition",
+      "Translated X": 0.0,
+      "Translated Y": -0.07,
+      "Translated Z": 0.0
+    }
+  },
   "AnnoyUtils": {
     "State": false,
     "Key": 0,
@@ -49,6 +61,12 @@
     "Values": {
       "Options": "Simple"
     }
+  },
+  "AntiFlag": {
+    "State": false,
+    "Key": 21,
+    "Hidden": false,
+    "Values": {}
   },
   "AntiVoid": {
     "State": false,
@@ -128,7 +146,7 @@
   "AutoQueue": {
     "State": true,
     "Key": 0,
-    "Hidden": true,
+    "Hidden": false,
     "Values": {
       "Mode": "Mineblaze duels"
     }
@@ -136,7 +154,7 @@
   "AutoRegister": {
     "State": true,
     "Key": 0,
-    "Hidden": true,
+    "Hidden": false,
     "Values": {
       "Password": "FoxesAreCute",
       "Delay": 0.0
@@ -179,7 +197,7 @@
   "AutoTool": {
     "State": true,
     "Key": 0,
-    "Hidden": true,
+    "Hidden": false,
     "Values": {
       "Spoof": true,
       "Switch Back": true
@@ -279,12 +297,6 @@
     "Values": {
       "Show Prev Pos": true
     }
-  },
-  "BlockOnSwing": {
-    "State": false,
-    "Key": 0,
-    "Hidden": false,
-    "Values": {}
   },
   "BlockOverlay": {
     "State": true,
@@ -501,8 +513,8 @@
       "Display real pos": true,
       "Render mode": "FakePlayer",
       "Only onGround": false,
-      "Only on killAura": true,
-      "Team check": true
+      "Only on killAura": false,
+      "Team check": false
     }
   },
   "FastBow": {
@@ -526,7 +538,7 @@
   "FastPlace": {
     "State": false,
     "Key": 0,
-    "Hidden": true,
+    "Hidden": false,
     "Values": {
       "Right click delay": 1.0,
       "Ignore tick cycle": false,
@@ -547,12 +559,12 @@
   "FlagDetector": {
     "State": true,
     "Key": 0,
-    "Hidden": true,
+    "Hidden": false,
     "Values": {}
   },
   "Fly": {
     "State": false,
-    "Key": 20,
+    "Key": 0,
     "Hidden": false,
     "Values": {
       "Mode": "Intave",
@@ -617,7 +629,7 @@
   },
   "InfAura": {
     "State": false,
-    "Key": 21,
+    "Key": 0,
     "Hidden": false,
     "Values": {
       "Attack delay": 50.0,
@@ -627,7 +639,7 @@
   "InputFix": {
     "State": true,
     "Key": 0,
-    "Hidden": true,
+    "Hidden": false,
     "Values": {}
   },
   "Interface": {
@@ -635,17 +647,17 @@
     "Key": 0,
     "Hidden": false,
     "Values": {
-      "Elements": "Watermark, Module list, Armor, Notification, Keystrokes, Info, Motion graph",
-      "Watermark mode": "Image",
+      "Elements": "Watermark, Module list, Armor, Notification, Keystrokes, Info, Motion graph, Radar",
+      "Watermark mode": "Blue archive",
       "Hide render": true,
+      "Notification sounds": true,
       "Color mode": "Blend",
       "Fade speed": 1.0,
       "Background style": "Opaque",
       "Background color": {
-        "RGB": -15395563,
-        "Alpha": 1.0
+        "RGB": -16777216,
+        "Alpha": 0.2627451
       },
-      "Background alpha": 204.0,
       "Chat combine": true,
       "funy": false
     }
@@ -653,7 +665,7 @@
   "InvMove": {
     "State": true,
     "Key": 0,
-    "Hidden": true,
+    "Hidden": false,
     "Values": {
       "Safe": true
     }
@@ -678,12 +690,6 @@
     "Hidden": false,
     "Values": {}
   },
-  "ItemGlow": {
-    "State": false,
-    "Key": 0,
-    "Hidden": false,
-    "Values": {}
-  },
   "Jesus": {
     "State": false,
     "Key": 0,
@@ -695,13 +701,13 @@
   "JumpDelay": {
     "State": true,
     "Key": 0,
-    "Hidden": true,
+    "Hidden": false,
     "Values": {
       "Jump delay": 0.0
     }
   },
   "JumpReset": {
-    "State": true,
+    "State": false,
     "Key": 0,
     "Hidden": false,
     "Values": {
@@ -733,7 +739,7 @@
       "Force attack on BackTrack": true,
       "Ignore blocking": false,
       "CPS (min)": 12.0,
-      "CPS (max)": 14.0,
+      "CPS (max)": 16.0,
       "RayTrace": true,
       "Fail swing": true,
       "Swing range": 4.5,
@@ -768,7 +774,6 @@
       "Y trim": 0.17,
       "Rotation prediction": false,
       "Predict ticks": 1.0,
-      "Simulated motion multi": 1.0,
       "Normal target pos offset": 0.0,
       "Static miss offset": true,
       "Miss target pos offset": 0.0,
@@ -812,7 +817,7 @@
     "Key": 0,
     "Hidden": false,
     "Values": {
-      "Delay": 250.0,
+      "Delay": 1000.0,
       "Attack range": 3.0,
       "Stop range": 2.5,
       "Search range": 15.0,
@@ -825,7 +830,7 @@
       "Display real pos": true,
       "Render mode": "FakePlayer",
       "Only on killAura": true,
-      "Team Check": false
+      "Team Check": true
     }
   },
   "LegitScaffold": {
@@ -940,14 +945,6 @@
       "Timer": 1.0
     }
   },
-  "MoveStatus": {
-    "State": false,
-    "Key": 0,
-    "Hidden": false,
-    "Values": {
-      "Lowercase": true
-    }
-  },
   "Murder Mystery": {
     "State": false,
     "Key": 0,
@@ -980,8 +977,10 @@
     "Key": 0,
     "Hidden": false,
     "Values": {
-      "Mode": "NoGround",
-      "Fall distance": 3.0
+      "Mode": "Clutch",
+      "Fall distance": 3.0,
+      "Max predict ticks": 20.0,
+      "Keep ticks": 2.0
     }
   },
   "NoGuiClose": {
@@ -995,7 +994,7 @@
   "NoHitDelay": {
     "State": true,
     "Key": 0,
-    "Hidden": true,
+    "Hidden": false,
     "Values": {}
   },
   "NoHurtCam": {
@@ -1027,11 +1026,10 @@
   },
   "Phase": {
     "State": false,
-    "Key": 22,
+    "Key": 20,
     "Hidden": false,
     "Values": {
-      "Mode": "Intave",
-      "Intave mode": "Manual"
+      "Mode": "Intave"
     }
   },
   "PingSpoof": {
@@ -1110,14 +1108,13 @@
       "Max Telly Ticks": 3.0,
       "Rotations": "GodBridge",
       "Static-ify": true,
-      "Min search": 0.1,
-      "Max search": 0.9,
       "Clutch": true,
       "Clutch criteria": "MouseOver",
       "Clutch rotation mode": "Normal",
-      "Min C search": 0.1,
-      "Max C search": 0.9,
-      "Instant clutch rots": true,
+      "Instant clutch rots": false,
+      "Smart clutch rot speed": true,
+      "Auto sneak on clutch": true,
+      "Ground ticks to sneak": 5.0,
       "Silent": true,
       "Rotate legit": false,
       "Smooth mode": "Linear",
@@ -1125,10 +1122,10 @@
       "Yaw accel factor": 0.25,
       "Pitch accel factor": 0.25,
       "Imperfect correlation": false,
-      "Yaw rotation speed (min)": 179.99,
-      "Yaw rotation speed (max)": 179.99,
-      "Pitch rotation speed (min)": 179.99,
-      "Pitch rotation speed (max)": 179.99,
+      "Yaw rotation speed (min)": 45.24,
+      "Yaw rotation speed (max)": 45.24,
+      "Pitch rotation speed (min)": 45.24,
+      "Pitch rotation speed (max)": 45.24,
       "Distance based rotation speed": false,
       "Min range": 0.0,
       "Max range": 8.0,
@@ -1139,11 +1136,14 @@
       "Rotation diff buildup to stop": 180.0,
       "Max threshold attempts to stop": 1.0,
       "Sprint mode": "Normal",
-      "Addons": "Ray Trace, Target Block ESP",
-      "Blocks To Sneak": 6.0,
+      "Speed mode": "None",
+      "Addons": "RayTrace, Jump, Target block ESP",
+      "Blocks to jump": 7.0,
+      "Only straight": true,
+      "Blocks to sneak": 7.0,
       "Only sneak on ground": true,
       "Tower": "Jump",
-      "Tower Move": "Jump",
+      "Tower move": "Jump",
       "PullDown motion": 0.95
     }
   },
@@ -1202,6 +1202,8 @@
       "Boost multiplier": 1.0,
       "BMC mode": "Low",
       "Hop ticks": 5.0,
+      "Damage boost": false,
+      "Boost speed": 0.5,
       "Yaw offset": "None",
       "Min speed limiter": false,
       "Min speed": 0.2,
@@ -1212,7 +1214,7 @@
   "Sprint": {
     "State": true,
     "Key": 0,
-    "Hidden": true,
+    "Hidden": false,
     "Values": {
       "Omni": false,
       "Silent": false
@@ -1293,10 +1295,7 @@
     "State": false,
     "Key": 0,
     "Hidden": false,
-    "Values": {
-      "fuck the font renderer": false,
-      "a": 0.0
-    }
+    "Values": {}
   },
   "ThirdPersonDistance": {
     "State": false,
@@ -1418,7 +1417,7 @@
       "Only silent": false,
       "Not on miss": false,
       "Size": 0.08,
-      "Custom Color": true,
+      "Custom Color": false,
       "Color": {
         "RGB": -1,
         "Alpha": 1.0
