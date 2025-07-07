@@ -269,7 +269,7 @@
     "Values": {
       "Legit": false,
       "Silent": true,
-      "Extra smoothing factor": 0.15,
+      "Extra smoothing factor": 1.0,
       "Smooth mode": "Linear",
       "Accelerate": false,
       "Yaw accel factor": 0.25,
@@ -283,7 +283,7 @@
       "Min range": 0.0,
       "Max range": 8.0,
       "Decrement per cycle": 0.5,
-      "Movement correction": "None",
+      "Movement correction": "Silent",
       "Short stop": false,
       "Duration": 50.0,
       "Rotation diff buildup to stop": 180.0,
@@ -536,7 +536,7 @@
     }
   },
   "FastBreak": {
-    "State": true,
+    "State": false,
     "Key": 0,
     "Hidden": false,
     "Values": {
